@@ -1,6 +1,6 @@
 
 
-var loader = document.querySelector(".loader")
+var loader = document.querySelector(".loader");
 
 setTimeout(() => {
 window.addEventListener("load", vanish);
@@ -10,14 +10,18 @@ window.addEventListener("load", vanish);
 function vanish() {
   loader.classList.add("disppear");
   document.querySelector('body').style.overflowY = 'auto';
+  document.querySelector(".loader").style.display = 'none';
 }
 vanish();
+
+const effect = document.querySelector('.click_effect');
+
 
 
 
 const text = baffle(".text");
 text.set({
-      characters : '▓▒░█▀ΩXØ♣◙$$♫►€<>╬▓▒░█▀▓▒░█▀/>❤❤',
+      characters : '▓▒░█▀X$$€<>╬▓▒░█▀▓▒░█▀/>',
       speed: 120
 });
 text.start();
