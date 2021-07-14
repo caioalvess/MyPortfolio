@@ -16,9 +16,9 @@
 
 <body>
 
-  <div class="loader">
+  <!-- <div class="loader">
     <img src="./img/tenor.gif" alt="">
-  </div>
+  </div> -->
 
 
 
@@ -34,7 +34,7 @@
       <li class="nav_item"><a href="#home" class="nav_links-1" data-text="home">home</a></li>
       <li class="nav_item"><a href="#sobre" class="nav_links-3" data-text="sobre">sobre</a></li>
       <li class="nav_item"><a href="#portfolio" class="nav_links-2" data-text="portfólio">portfólio</a></li>
-      <li class="nav_item"><a href="#" class="nav_links-4" data-text="contato">contato</a></li>
+      <li class="nav_item"><a href="#contato" class="nav_links-4" data-text="contato">contato</a></li>
 
       <div class="social">
         <ul class="social_list">
@@ -159,13 +159,14 @@
     <div class="divide_line left right"></div>
   </div>
 
-  <div id="portfolio"id="portfolio"></div>
+  <div id="portfolio" id="portfolio"></div>
 
   <section class="portfolio_section">
     <div class="portfolio_title">
       <h2>Portfólio</h2>
       <div class="portfolio_p">
-      <p>Alguns projetos feitos por mim durante a formação. Priorizo sempre a responsividade de todas as aplicações e gosto de colocar uma personalidade em tudo o que eu faço.</p>
+        <p>Alguns projetos feitos por mim durante a formação. Priorizo sempre a responsividade de todas as aplicações e
+          gosto de colocar uma personalidade em tudo o que eu faço.</p>
       </div>
     </div>
     <!-- Swiper -->
@@ -209,9 +210,56 @@
     });
   </script>
 
-<div class="page_divide">
-  <div class="divide_block"></div>
-</div>
+  <div class="page_divide">
+    <div class="divide_block"></div>
+  </div>
+
+
+  <div id="contato"></div>
+  <section class="contact" >
+
+    <div class="contact_title">
+      <h2>Contato</h2>
+    </div>
+
+    <div class="contact_grid">
+
+      <div class="form_wrapper">
+
+
+
+        <div class="form">
+          <form action="">
+            <div class="form_group">
+              <input type="text" placeholder="Nome e Sobrenome" class="form_control" minlength="8">
+            </div>
+            <div class="form_group">
+              <input type="email" placeholder="E-mail" class="form_control" id="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email">
+              <span id="error-email"></span>
+            </div>
+            <div class="form_coment">
+              <textarea type="text" placeholder="Faça um comentário" class="form_control"></textarea>
+            </div>
+            <div class="form_group">
+              <button type="submit" data-text="Enviar">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <small>by Caio Alves &copy;</small>
+    <div class="social_footer">
+      
+      <a href="https://github.com/caioalvess"> <img class="git_footer" src="./img/github.png" width="30px" alt=""></a>
+      <a href="https://www.linkedin.com/in/caio-felipe-alves-de-oliveira-7a734b180/"> <img class="link_footer" src="./img/linkedin.png" width="30px" alt=""></a>
+      <a href="https://www.instagram.com/cah.felipe/"><img class="insta_footer" src="./img/instagram (1).png" width="30px" alt=""></a>
+    </div>
+  </footer>
 
 
 </body>

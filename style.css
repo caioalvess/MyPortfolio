@@ -11,7 +11,7 @@
   }
 
   body {
-    overflow-y: hidden;
+    overflow-y: auto;
     background:
         /* top, transparent black, faked with gradient */ 
         linear-gradient(
@@ -1073,4 +1073,255 @@
     background-position-x: center;
     margin: 56px 0;
     }
+
+  .contact {
+    height: auto;
+    width: 100%;
+    padding: 0 100px;
+    margin: 230px 0 100px 0;
+  }
+
+  .contact_title {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:50px 0;
+    position: relative;
+  }
+
+  .contact_title h2 {
+    height: 100px;
+    width: 100%;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 40px;
+    text-shadow:1px 1px red ;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding-top:30px;
+  }
+
+  .contact_title h2::before {
+    content: '<contact>';
+    position: absolute;
+    top: -12px;
+    left: 250px;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px blue;
+    letter-spacing: 3px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: lowercase;
+  }
+
+  .contact_title h2::after {
+    content: '</contact>';
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px red;
+    letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: lowercase;
+  }
+
+  .contact_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  
+
+  .form_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .form {
+    width: 900px;
+  }
+
+  .form .form_group {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form .form_group input {
+    height: 30px;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 0;
+    box-shadow: 1px 1px purple;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .form .form_coment textarea {
+    height: 150px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 1px 1px purple;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    resize: none;
+    color: #fff;
+    font-size: 17px;
+    
+  }
+
+  .form_group button {
+    background-color: transparent;
+    color: #fff;
+    padding: 17px 50px;
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .form_group button:hover::before, .form_group button:hover::after {
+  padding: 30px;
+  color: #fff;
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  top: -12px;
+  }
+
+  .form_group button:hover::before {
+    left: -17px;
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
+
+  .form_group button:hover::after {
+    left: -30px;
+    text-shadow: -2px 0 red;
+    animation: glitch-1 2s linear infinite reverse;
+  }
+
+  .form_group #email span {
+      color: crimson;
+  }
+
+  footer {
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  footer small {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  footer .social_footer {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 0 20px;
+  }
+
+  .git_footer {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(220deg) brightness(106%) contrast(101%);
+    
+  }
+
+  .link_footer {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(220deg) brightness(106%) contrast(101%);
+    
+  }
+
+ @media screen and (max-width: 980px) {
+
+  .form {
+    width: 700px;
+  }
+
+ }
+
+ @media screen and(max-width: 780px) {
+  .form {
+    width: 400px;
+  }
+ }
+
+ @media screen and (max-width: 575px) {
+
+  .form {
+    width: 360px;
+  }
+
+  .contact_title h2 {
+      height: 100px;
+      width: 200px;
+      color: rgb(226, 226, 226);
+      text-align: center;
+      position: relative;
+      font-weight: 400;
+      font-size: 28px;
+      text-shadow:1px 1px blue ;
+      font-family: 'Press Start 2P', cursive;
+      text-transform: uppercase;
+      padding-top:30px ;
+  }
+
+  .contact_title h2::before {
+    content: '<contact>';
+    position: absolute;
+    top: -12px;
+    left: 160px;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px blue;
+    letter-spacing: 3px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: lowercase;
+  }
+
+  .contact_title h2::after {
+    content: '</contact>';
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px red;
+    letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: lowercase;
+  }
+ }
+
+
+
+
+
+
+  
 
