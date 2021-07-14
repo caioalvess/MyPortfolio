@@ -76,7 +76,8 @@ const navSlide = () => {
       body.style.animation = 'glitch-anim-flash 0.5s linear alternate';
       body.style.animation = 'glitch-anim-1 0.5s linear alternate';
       body.style.animation = 'glitch-anim-2 0.5s linear alternate';
-
+      nav.classList.remove('menu_active');
+      burger.classList.remove('is-active');
       
     }, 1);
   })
@@ -87,6 +88,8 @@ const navSlide = () => {
       body.style.animation = 'glitch-anim-flash 0.5s linear alternate';
       body.style.animation = 'glitch-anim-1 0.5s linear alternate';
       body.style.animation = 'glitch-anim-2 0.5s linear alternate';
+      nav.classList.remove('menu_active');
+      burger.classList.remove('is-active');
       
     }, 1);
   })
@@ -97,6 +100,8 @@ const navSlide = () => {
       body.style.animation = 'glitch-anim-flash 0.5s linear alternate';
       body.style.animation = 'glitch-anim-1 0.5s linear alternate';
       body.style.animation = 'glitch-anim-2 0.5s linear alternate';
+      nav.classList.remove('menu_active');
+      burger.classList.remove('is-active');
       
     }, 1);
   })
@@ -107,6 +112,8 @@ const navSlide = () => {
       body.style.animation = 'glitch-anim-flash 0.5s linear alternate';
       body.style.animation = 'glitch-anim-1 0.5s linear alternate';
       body.style.animation = 'glitch-anim-2 0.5s linear alternate';
+      nav.classList.remove('menu_active');
+      burger.classList.remove('is-active');
       
     }, 1);
   })
