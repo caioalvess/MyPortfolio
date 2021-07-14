@@ -11,7 +11,7 @@
   }
 
   body {
-    overflow-y: hidden;
+    overflow-y: auto;
     background:
         /* top, transparent black, faked with gradient */ 
         linear-gradient(
@@ -1295,7 +1295,7 @@
     content: '<contact>';
     position: absolute;
     top: -12px;
-    left: -80px;
+    left: 120px;
     font-weight: 300;
     font-size: 15px;
     text-shadow: 1px 1px blue;
@@ -1308,7 +1308,7 @@
     content: '</contact>';
     position: absolute;
     bottom: 0;
-    right: -80px;
+    right: 120px;
     font-weight: 300;
     font-size: 15px;
     text-shadow: 1px 1px red;
