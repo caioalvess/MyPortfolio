@@ -11,7 +11,7 @@
   }
 
   body {
-    overflow-y: auto;
+    overflow-y: hidden;
     background:
         /* top, transparent black, faked with gradient */ 
         linear-gradient(
